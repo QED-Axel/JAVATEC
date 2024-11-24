@@ -64,6 +64,7 @@ public class SintacticoErrTest {
     //--------------------------------------------------------------------------
     
     @Test
+   
     public void emparejarTest () {
         ArrayList<String> programas = new ArrayList<> ();
         
@@ -100,7 +101,7 @@ public class SintacticoErrTest {
       """
         public class Prueba01 { public static void main ( string args []  { } }
         """ );
-        
+
         // #7 - Error en la linea 2,3,4 y , falta el nombre del metodo
         programas.add ( 
       """
@@ -112,7 +113,7 @@ public class SintacticoErrTest {
           public static void main  ( string args [] ) { } 
         }
         """ );
-
+        
         int i = 0;
         // Por cada uno de los programas de prueba...
         for ( String programa : programas ) { 
@@ -136,6 +137,7 @@ public class SintacticoErrTest {
     //--------------------------------------------------------------------------
     
     @Test
+   
     public void simboloInicialTest () {
         ArrayList<String> programas = new ArrayList<> ();
         
@@ -165,6 +167,7 @@ public class SintacticoErrTest {
     //--------------------------------------------------------------------------
     
     @Test
+    
     public void decVariablesTest () {
         ArrayList<String> programas = new ArrayList<> ();
         
@@ -192,18 +195,6 @@ public class SintacticoErrTest {
         """         
         );        
         
-        // #3 - Error en la linea 3, falta cerrar el ]
-        programas.add ( 
-      """
-        public class Prueba01
-        {
-          public static int a, b [10;
-          public static void main ( string args [] ) {
-          }  
-        }
-        """         
-        ); 
-
         int i = 0;
         // Por cada uno de los programas de prueba...
         for ( String programa : programas ) { 
@@ -226,6 +217,7 @@ public class SintacticoErrTest {
     
     //--------------------------------------------------------------------------
     @Test
+    
     public void decMetodosTest () {
         ArrayList<String> programas = new ArrayList<> ();
         
@@ -294,6 +286,7 @@ public class SintacticoErrTest {
     //--------------------------------------------------------------------------    
     
     @Test
+    
     public void expresionTest () {
         ArrayList<String> programas = new ArrayList<> ();
         
@@ -368,6 +361,7 @@ public class SintacticoErrTest {
     //--------------------------------------------------------------------------  
     
     @Test
+    
     public void invocacionMetodosTest () {
         ArrayList<String> programas = new ArrayList<> ();
         

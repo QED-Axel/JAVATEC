@@ -33,8 +33,7 @@
  *:                                 ==     operador relacional de igualdad
  *:                                 "hola" literal (comillas dobles)
  *:
- *: 29/SEP/2024 M.Mijares/A.Cabrera - Se agregaron las palabras reservadas acorde 
- *:                                   acorde a los procedure agregados
+ *: 26/sep/2024 LBarranco & SLopez -Se capturo lista de pal.res del leng. simple
  *:-----------------------------------------------------------------------------
  */
 
@@ -223,12 +222,29 @@ public class Lexico {
    
    private Boolean EsPalabraReservada(String lex)
    {      
-       String palres[] = {"entero", "real", "caracter", "inicio",
-                            "fin", "public", "class", "static", "int", "float", "string", "void", "main", "args",
-                            "literal", "if", "else", "while" 
+       String palres[] = {
+           "entero",
+           "real",
+           "caracter",
+           "inicio",
+           "fin",
+           "public",
+           "class",
+           "static",
+           "int",
+           "float",
+           "string",
+           "void",
+           "main",
+           "args",
+           "if",
+           "else",
+           "while",
+           "literal"
                          };
        for (int i = 0; i < palres.length; i++) {
-           if (lex.equals ( palres[i] ) ) {       
+           if (lex.equals ( palres[i] ) ) {
+               
                return true; 
            }
        }

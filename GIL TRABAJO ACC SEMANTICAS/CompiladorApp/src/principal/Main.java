@@ -48,9 +48,8 @@ public class Main {
     
     public static final String [] colaboradores = { 
         "Lenguajes y Automatas II :: Grupo 8-9 am :: Semestre Ago-Dic/2024",
-        "Manuel Mijares (21130848)", 
-        "Alejandro Cabrera (21130856)",
-        "Collab: Shani"
+        "Luis Barranco  (21130876)", 
+        "Sergio Lopez       (21130847)"
     };  
    
 }

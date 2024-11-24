@@ -6,18 +6,18 @@ package compilador;
 
 /**
  *
- * @author Usuario
+ * @author luisbarranco
  */
 public class Atributos {
     String tipo;
     String h;
-    String longitud;
+    int longitud;
     boolean esArreglo;
     
     public Atributos () {
         tipo = "";
         h = "";
-        longitud = "";
+        longitud = 0;
         esArreglo = false;
     }
 }

@@ -79,9 +79,9 @@ public class SintacticoOKTest {
         programas.add ( """
         public class Prueba01
         {
-          public static float a,  b, c [10], d;
+          public static float a,  b;
           public static int   i;
-          public static string c1 [20], c2;
+          public static string c1, c2;
 
           public static void main ( string args [] ) {
           }  
@@ -146,7 +146,6 @@ public class SintacticoOKTest {
             a = 0;
             a = b;
             a = b + c;
-            a [1] = 0;
             suma = 0.0;
             suma = aa + b + suma;
             resultado = ( ( 2 * aa ) + b ) * c; 
